@@ -1436,17 +1436,17 @@ const todos = [
   
 //find web person id
 
-  var usered = users.find(users => users.company.bs.includes("web") === true);
+let usered = users.find(users => users.company.bs.includes("web") === true);
 
 //find and push in array uncompleted todos tasks
 
-  var arr = todos.filter(todos => todos.userId === usered.id && todos.completed === false);
+  let arr = todos.filter(todos => todos.userId === usered.id && todos.completed === false);
 
 //display result 
 
   console.log(`Number of uncompleted todos tasks: ${arr.length}.`);
 
-  for(var i = 0;i < arr.length; i++ ){
+  for(let i = 0; i < arr.length; i++ ){
     console.log(`Title: ${arr[i].title}`);
   }
 
