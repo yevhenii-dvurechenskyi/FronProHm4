@@ -1444,10 +1444,10 @@ const todos = [
 
 //display result 
 
-  alert(`Number of uncompleted todos tasks: ${arr.length}.`);
+  console.log(`Number of uncompleted todos tasks: ${arr.length}.`);
 
   for(var i = 0;i < arr.length; i++ ){
-    alert(`Title: ${arr[i].title}`);
+    console.log(`Title: ${arr[i].title}`);
   }
 
 
